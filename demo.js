@@ -2,6 +2,11 @@ $ui.alert({
     title: "Demo",
     message: "Hello world",
 });
-console.info("Hi JsBox")
+var text = $clipboard.text
+$device.taptic(0);
+$console.info(text);
+
 console.info("Hello, World!")
-//print to comsole
+//print to console
+
+

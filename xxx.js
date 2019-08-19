@@ -12,6 +12,7 @@ $ui.render({
         events: {
           tapped: function(sender) {
             $ui.toast("Tapped")
+            $device.taptic(4);
             $app.openBrowser({
                 type: 10000,
                 url: "https://www.apple.com/cn/"
