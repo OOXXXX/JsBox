@@ -12,11 +12,15 @@ $ui.render({
         events: {
           tapped: function(sender) {
             $ui.toast("Tapped")
-            $device.taptic(4);
-            $app.openBrowser({
-                type: 10000,
-                url: "https://www.apple.com/cn/"
-              })
+            $device.taptic(3);
+            $safari.open({
+              url: "https://www.patrickzhu.club",
+              entersReader: true,
+              height: 360,
+              handler: function() {
+            
+              }
+            })
           }
         }
       }
